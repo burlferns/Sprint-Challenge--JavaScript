@@ -29,14 +29,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+Ans1: The biggest difference is that map returns an array, while forEach does not return anything
 
 2. What is the difference between a function and a method?
+Ans2: A function is a group of code statements outside any object and that does not belong to any object. A method is a group of code statements that is inside an object and belongs to that object.
 
 3. What is closure?
+Ans3: Let's say there is a function called funcA that is contained in a function called funcB. Closure in Javascript is the ability of funcA to access variables outside of funcA's curly braces, but that is within its enclosing function funcB.
 
 4. Describe the four rules of the 'this' keyword.
+Ans4: These are the four rules of binding for the "this" keyword:
+      Rule1: Implicit binding for the "this" keyword means that the "this" keyword in a method refers to the object to the left of the dot in an expression where the method is called.
+      Rule2: Explicit binding for the "this" keyword means that the "this" keyword in a function refers to the object that is the first argument in one of three specific method calls of the function. These specific methods are call(), apply() & bind().
+      Rule3: New binding for the "this" keyword means that the "this" keyword in a constructor function or in a class constructor refers to the object created by the constructor function or a class constructor when they are used with the "new" keyword.
+      Rule4: Window binding for the "this" keyword means that the "this" keyword in a function/method refers to the global object. The global object is window in a browser. This is a default "this" binding and it occurs when the other three types of "this" binding cannot happen.
+
 
 5. Why do we need super() in an extended class?
+The super() method in an extended class enables the inheritance of two items of the parent's class by the extended class. These two items are the parent's properties and the parent's methods that are not in the prototype property of the parent. 
+
 
 ## Project Set up
 

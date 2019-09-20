@@ -1,3 +1,5 @@
+console.log("************************* This is output from FUNCTIONS.JS   ----- CALLBACKS SECTION  ***************************");
+
 // ==== Callbacks ====  
 
 /* Step 1: Create a higher-order function
@@ -6,6 +8,9 @@
   * The last parameter accepts a callback
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
+function consume(a,b,cb) {
+  return cb(a,b);
+}
 
 
 /* Step 2: Create several functions to callback with consume();
@@ -13,19 +18,33 @@
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
+function add(num1,num2) {
+  return num1+num2;
+}
+
+function multiply(num1,num2) {
+  return num1*num2;
+}
+
+function greeting(firstName,lastName) {
+  return `Hello ${firstName} ${lastName}, nice to meet you!`;
+}
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
+
+console.log("************************* This is output from FUNCTIONS.JS   ----- CLOSURES SECTION  ***************************");
 
 // ==== Closures ==== 
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
-// Explanation: 
+// Explanation: JavaScript has a feature called closure. Let's say there is a function called funcA that is contained in a function called funcB. Closure in Javascript is the ability of funcA to access variables outside of funcA's curly braces, but that is within its enclosing function funcB. The nestedfunction can access the variable internal because it uses JavaScript's closure feature.
+
 
 
 const external = "I'm outside the function";
