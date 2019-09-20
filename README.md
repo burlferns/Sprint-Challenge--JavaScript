@@ -42,7 +42,7 @@ Ans4: These are the four rules of binding for the "this" keyword:
       Rule1: Implicit binding for the "this" keyword means that the "this" keyword in a method refers to the object to the left of the dot in an expression where the method is called.
       Rule2: Explicit binding for the "this" keyword means that the "this" keyword in a function refers to the object that is the first argument in one of three specific method calls of the function. These specific methods are call(), apply() & bind().
       Rule3: New binding for the "this" keyword means that the "this" keyword in a constructor function or in a class constructor refers to the object created by the constructor function or a class constructor when they are used with the "new" keyword.
-      Rule4: Window binding for the "this" keyword means that the "this" keyword in a function refers to the global object. The global object is window in a browser. This is a default "this" binding and it occurs when the other three types of "this" binding cannot happen.
+      Rule4: Window binding for the "this" keyword means that the "this" keyword in a function/method refers to the global object. The global object is window in a browser. This is a default "this" binding and it occurs when the other three types of "this" binding cannot happen.
 
 
 5. Why do we need super() in an extended class?
