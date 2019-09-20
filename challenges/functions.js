@@ -43,7 +43,7 @@ console.log("************************* This is output from FUNCTIONS.JS   ----- 
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
-// Explanation: JavaScript has a feature called closure. Let's say there is a function called funcA that is contained in a function called funcB. Closure in Javascript is the ability of funcA to access variables outside of funcA's curly braces, but that is within its enclosing function funcB. The nestedfunction can access the variable internal becasue it uses JavaScripts closure feature.
+// Explanation: JavaScript has a feature called closure. Let's say there is a function called funcA that is contained in a function called funcB. Closure in Javascript is the ability of funcA to access variables outside of funcA's curly braces, but that is within its enclosing function funcB. The nestedfunction can access the variable internal because it uses JavaScript's closure feature.
 
 
 
